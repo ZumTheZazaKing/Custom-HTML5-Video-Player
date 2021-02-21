@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    flex-direction: column;
+}
+
+#container{
+    margin-top: 5%;
+}
+
+#video{
+    width: 700px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#videoControls{
+    width: inherit;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+    transition: .4s all;
+    opacity: 0;
+}
+
+#play{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+#progressBar{
+    height: 20px;
+    background-color: #fff;
+    width: 100%;
+    cursor: ew-resize;
+}
+
+#progress{
+    background-color: skyblue;
+    height: inherit;
+    width: 0%;
+}
+
+label{
+    font-size: 26px;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#volume{
+    cursor: pointer;
+}
+
+.skip{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+#advice{
+    font-family: 'Quicksand';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 10%;
+    display: none;
+}
+
+#credit{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#credit a{
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 750px){
+
+    #container{
+        display: none;
+    }
+
+    #advice{
+        display: block;
+    }
+
+}

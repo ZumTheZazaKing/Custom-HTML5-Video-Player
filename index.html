@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Custom HTML Video Player</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <p id="credit">
+            Original video by 
+            <a href="https://www.youtube.com/channel/UCD7KU_n4CuC50laQLvKP-mA" target="_blank">Jhanzou</a> 
+            from YouTube
+        </p>
+
+        <video id="video" src="CG.mp4"></video>
+
+        <div id="videoControls">
+    
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+    
+            <button id="play">►</button>
+            <button data-skip="-10" class="skip"><<&nbsp;10s</button>
+            <button data-skip="25" class="skip">25s&nbsp;>></button>
+
+            <label for="volume"><i class="fa fa-volume-up"></i></label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+            
+    
+        </div>
+    </div>
+
+    <p id="advice">Please acquire a larger screen</p>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
